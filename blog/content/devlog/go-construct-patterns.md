@@ -1,7 +1,7 @@
 ---
 title: "Go Construct Patterns"
 date: 2023-11-18T05:54:32-05:00
-draft: true
+draft: false
 ---
 
 Recently I've been working a lot with the AWS CDK in Golang and there isn't a
