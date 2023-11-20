@@ -8,9 +8,9 @@ Recently I've been working a lot with the AWS CDK in Golang and there isn't a
 lot of prior art to reference. When working in TypeScript I could always just
 look at the [aws-cdk](https://github.com/aws/aws-cdk) repo and find tons of
 great examples. One thing that has taken me a while to develop a pattern for is
-creating [constructs](). In TypeScript it's pretty simple, you just create a new
-class that extends some other construct and you're done. In Go, it's a little
-more complicated.
+creating [constructs](https://docs.aws.amazon.com/cdk/v2/guide/constructs.html).
+In TypeScript it's pretty simple, you just create a new class that extends some
+other construct and you're done. In Go, it's a little more complicated.
 
 In this post I'm going to talk through some patterns that I've discovered when
 creating Go constructs. If you've discovered better ones, please let me know!
@@ -18,8 +18,9 @@ creating Go constructs. If you've discovered better ones, please let me know!
 ## Creating a new simple construct
 
 I'll start off by talking about the basic example that you've probably seen
-elsewhere. For the example, I'll be creating a construct with an [HttpApi]() as
-the core resource.
+elsewhere. For the example, I'll be creating a construct with an
+[HttpApi](https://pkg.go.dev/github.com/aws/aws-cdk-go/awscdkapigatewayv2alpha/v2#HttpApi)
+as the core resource.
 
 Since Go doesn't have classes, you can't just create a `MyApi` class and extend
 construct like you would do in TypeScript. Instead you would create a function
