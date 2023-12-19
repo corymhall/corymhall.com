@@ -1,4 +1,4 @@
-# baseURL = 'http://example.org/'
+baseURL = 'https://corymhall.com/'
 languageCode = 'en-us'
 title = "Cory Hall's Devlog"
 theme = "hugo-bearcub"

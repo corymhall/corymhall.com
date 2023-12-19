@@ -1,6 +1,6 @@
 ---
 title: "CDK Diff GitHub Action"
-date: 2023-12-09T05:54:32-05:00
+date: 2023-12-19T05:54:32-05:00
 draft: false
 ---
 
@@ -120,9 +120,9 @@ of the tools that I used.
 
 #### [Projen](https://github.com/projen/projen) & [projen-github-action-typescript](https://github.com/projen/projen-github-action-typescript)
 
-If you are familiar with the CDK chances are that you are familiar with projen,
+If you are familiar with the CDK, chances are that you are familiar with projen,
 and if not, you can think of projen as CDK for projects. Projen has a bunch of
-built-in project types, but it also allow you to create a project from a 3rd
+built-in project types, but it also allows you to create a project from a 3rd
 party library. The [projen-github-action-typescript](https://github.com/projen/projen-github-action-typescript)
 library creates a GitHub actions project.
 
@@ -202,7 +202,7 @@ and the `v1.1` tags to point to the latest commit.
 
 For my first attempt, I created a [new script](https://github.com/corymhall/cdk-diff-action/blob/04308d015d55f93fdd3e0516855b8cbc6f1e7b0f/projenrc/release-version.ts#L45-L49)
 that would create the new release (for e.g. `v1.1.2`) and then would force
-update the `v1` and `v1.1` tags. After a lot of trial and error I finally got
+update the `v1` and `v1.1` tags. After a lot of trial and error, I finally got
 stuck on a git error when trying to push the tags.
 
 ```shell
