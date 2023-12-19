@@ -1,5 +1,6 @@
 ---
 title: "Go Construct Patterns"
+description: "Post showing some common patters for creating CDK constructs in Go"
 date: 2023-11-18T05:54:32-05:00
 draft: false
 ---

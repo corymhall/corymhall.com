@@ -1,5 +1,6 @@
 ---
 title: "CDK Diff GitHub Action"
+description: "cdk-diff-action GitHub action displays CloudFormation stack diffs on PR comments"
 date: 2023-12-19T05:54:32-05:00
 draft: false
 ---
